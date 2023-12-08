@@ -23,7 +23,7 @@ public class PeopleController {
 
     @GetMapping()
     public String index(Model model){
-        //получим всех людей из дао и передадим всех на отоброжение в представление
+        //получим всех людей из дао и пер едадим всех на отоброжение в представление
         model.addAttribute("people", personDAO.index());
         return "people/index";
     }
